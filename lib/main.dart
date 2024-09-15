@@ -5,10 +5,12 @@ import 'features/gallery/bloc/image_bloc.dart';
 import 'features/gallery/ui/gallery_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const PixabayGalleryApp());
 }
 
-class MyApp extends StatelessWidget {
+class PixabayGalleryApp extends StatelessWidget {
+  const PixabayGalleryApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
